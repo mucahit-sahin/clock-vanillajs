@@ -1,0 +1,50 @@
+body {
+  background-size: cover;
+  background: url("/img/wall.jpg");
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.dateTitleText {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+}
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background-size: cover;
+  background: url("/img/clock.jpg");
+  background-size: 300px;
+}
+.hands {
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+}
+.secondHand {
+  width: 45%;
+  left: 5%;
+  background: lightblue;
+}
+.minuteHand {
+  width: 30%;
+  left: 20%;
+  background: gray;
+}
+.hourHand {
+  width: 20%;
+  left: 30%;
+  background: black;
+}
